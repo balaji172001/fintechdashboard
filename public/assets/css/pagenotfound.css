@@ -1,0 +1,149 @@
+        body{
+            margin: 40px;
+                font-family: 'AtAeroTRIAL', sans-serif;
+
+        }
+        /* Black */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('/assets/fonts/at_aero/AtAeroTRIAL-Black.otf') format('opentype');
+
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('/assets/fonts/at_aero/AtAeroTRIAL-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Semibold */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('/assets/fonts/at_aero/AtAeroTRIAL-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('/assets/fonts/at_aero/AtAeroTRIAL-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('/assets/fonts/at_aero/AtAeroTRIAL-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Light */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('/assets/fonts/at_aero/AtAeroTRIAL-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Thin */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('/assets/fonts/at_aero/AtAeroTRIAL-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Retina (custom) */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('/assets/fonts/at_aero/AtAeroTRIAL-Retina.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Super (custom) */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('/assets/fonts/at_aero/AtAeroTRIAL-Super.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+        .logo{
+            width: 52px;
+            height: auto;
+            object-fit: cover;
+        }
+        .named_logo {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        p.org_main_name {
+            font-family: "Rubik", sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #197860;
+            margin: 0 0 2px 0;
+            border-bottom: 0.5px solid #EE8625;
+        }
+        p.org_sub_name{
+            font-family: "Rubik", sans-serif;
+            font-size: 9px;
+            font-weight: 400;
+            color: #197860;
+            margin: 0;
+        }
+        .err_header {
+            display: flex;
+            justify-content: space-between;
+        }
+        p.need_assistance {
+            font-family: "Cabin", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #7C7C7C;
+        }
+        .contact_us{
+            font-family: "Cabin", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: #197860;
+            text-decoration: none;
+        }
+        .page_404 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        p.page_not_found_m_cnt {
+            /* font-family: "Cabin", sans-serif; */
+            /* font-family: at aero; */
+            font-weight: 600;
+            font-size: 32px;
+            text-align: center;
+            line-height: 40px;
+            margin: 24px 0 0 0;
+        }
+        img.page_not_found_img {
+            display: flex;
+            margin: auto;
+        }
+        p.page_not_found_s_cnt {
+            /* font-family: "Cabin", sans-serif; */
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #1F0405;
+            margin: 12px 0 0 0;
+        }

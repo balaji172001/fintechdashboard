@@ -73,7 +73,8 @@ color: #1F0405;
 }
 .payout2_cart4_bg{
         background-image: url(/assets/images/dashboard/payout_bg6.png);
-           width: 100%;
+           width:        font-family: 'AtAeroTRIAL';
+ 100%;
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;

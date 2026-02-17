@@ -1,0 +1,287 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    font-family: 'AtAeroTRIAL', sans-serif;
+
+    }
+
+    img{
+        max-width: 100%;
+    }
+    :root {
+        --pine-green: #197860;
+        --orange-accent: #EE8625;
+        --gray-background: #7C7C7C;
+        --mint-light: rgba(178, 232, 210, 0.11);
+        --teal-dark: rgba(21, 103, 85, 0.11);
+        --black-shadow: rgba(0, 0, 0, 0.25);
+    }
+    @font-face {
+        font-family: 'Rubik';
+        src: url(../fonts/Rubik-VariableFont_wght.woff2);
+    }
+    @font-face {
+        font-family: 'Cabin';
+        src: url(../fonts/Cabin-Medium.woff2);
+    }
+    /* Black */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('../fonts/at_aero/AtAeroTRIAL-Black.otf') format('opentype');
+
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('../fonts/at_aero/AtAeroTRIAL-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Semibold */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('../fonts/at_aero/AtAeroTRIAL-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('../fonts/at_aero/AtAeroTRIAL-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('../fonts/at_aero/AtAeroTRIAL-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Light */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('../fonts/at_aero/AtAeroTRIAL-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Thin */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('../fonts/at_aero/AtAeroTRIAL-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Retina (custom) */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('../fonts/at_aero/AtAeroTRIAL-Retina.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Super (custom) */
+@font-face {
+    font-family: 'AtAeroTRIAL';
+    src: url('../fonts/at_aero/AtAeroTRIAL-Super.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+    .page_main{
+        background-image: url("/assets/images/signin.webp");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .page_main-content{
+        padding: 40px;
+        height: 100vh;
+    }
+    .header_section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header_left-content {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .name_text {
+        font-family: 'Rubik';
+        padding-bottom: 2px;
+        border-bottom: 0.5px solid var(--orange-accent);
+        text-transform: uppercase;
+        color: var(--pine-green);
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .name-subtext {
+        font-family: 'Rubik';
+        padding-top: 2px;
+        color: var(--pine-green);
+        font-weight: 400;
+        font-size: 9px;
+    }
+    .contact_text {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--gray-background);
+        font-family: 'Cabin';
+    }
+    .contact_text span{
+        color: var(--pine-green);
+    }
+    .signin_main {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(139.32deg, var(--mint-light) 0%, var(--teal-dark) 95.12%);
+        box-shadow: 0px 0px 15px 0px var(--black-shadow);
+        padding: 10px;
+        border-radius: 16px;
+        width: 100%;
+        max-width: 500px;
+    }
+    .signin_head-text{
+        font-size: 28px;
+        font-weight: 500;
+        color: #1F0405;
+        text-align: center;
+    }
+    .signin_section {
+        background: #FFFFFF;
+        padding: 48px 24px;
+        border-radius: 10px;
+    }
+    .signin_head-subtext {
+        font-size: 16px;
+        font-weight: 400;
+        color: #5E5E5E;
+        text-align: center;
+        margin-top: 8px;
+    }
+    .signin_form{
+        margin-top: 40px;
+    }
+    .field_title {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #1F0405;
+    }
+    .email_input,
+    .password_input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #999286;
+        padding: 13px 14px;
+        font-size: 14px;
+        color: #1F0405;
+        outline: none;
+    }
+    .email_input::placeholder,
+    .password_input::placeholder {
+        color: #a09d9a;
+    }
+    .email_input:focus,
+    .password_input:focus {
+        border-bottom: 1px solid #197860;
+    }
+    .toggle_password {
+        cursor: pointer;
+        font-size: 12px;
+        color: #197860;
+        user-select: none;
+        margin-top: 4px;
+    }
+    .password_content{
+        margin-top: 24px;
+    }
+    .signin-opts {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 13px;
+        margin-bottom: 10px;
+    }
+    .keep_signin {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .keep_signin span {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #197860;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+    }
+    .keep_signin span::after {
+        content: "";
+        position: absolute;
+        left: 5px;
+        top: 1px;
+        width: 6px;
+        height: 12px;
+        border: solid #197860;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        display: none;
+    }
+    .keep_signin input:checked + span::after {
+        display: block;
+    }
+    .keep_signin input[type="checkbox"] {
+        cursor: pointer;
+        outline: none;
+        width: 16px;
+        height: 16px;
+    }
+    a.forgot_password {
+        color: #197860;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    p.security_concern {
+        font-weight: 400;
+        font-style: Regular Italic;
+        font-size: 13px;
+        color: #5E5E5E;
+        margin-bottom: 40px;
+    }
+    button.signin_btn {
+        width: 100%;
+        padding: 13px;
+        color: #FFFFFF;
+        background: #197860;
+        border: none;
+        border-radius: 2px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .error {
+        color: red;
+        font-size: 12px;
+        display: block;
+        margin-top: 5px;
+    }
+    .input-error {
+        border-bottom: 1px solid red;
+    }
