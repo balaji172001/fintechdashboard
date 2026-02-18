@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/images/favicon.svg" type="image/x-icon" sizes="32x32">
-
-    <title>403 Error</title>
-    <link rel="stylesheet" href="/assets/css/pagenotfound.css">
-
-
+    <title>403 Forbidden | Merchant Panel</title>
+    <link rel="icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/svg+xml">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/svg+xml">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="403 Forbidden - You do not have permission to access this page.">
+    <link rel="stylesheet" href="{{ asset('assets/css/pagenotfound.css') }}">
 </head>
+
 <body>
     <section class="err_403">
         <div class="err_header">

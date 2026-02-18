@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/images/favicon.svg" type="image/x-icon" sizes="32x32">
-    <title>Log-In</title>
-<link rel="stylesheet" href="/assets/css/login.css">
+    <title>Log In | Merchant Panel</title>
+    <link rel="icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/svg+xml">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/svg+xml">
+    <meta name="description" content="Secure login to Merchant Management Dashboard">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="{{ asset('assets/css/login.css') }}">
 </head>
+
 
 <body>
     <div class="page_main">
