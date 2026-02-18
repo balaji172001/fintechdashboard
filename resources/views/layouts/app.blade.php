@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Admin Dashboard')</title>
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/svg+xml">
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/svg+xml">
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/svg+xml">
     <!-- SEO (Optional but Recommended) -->
     <meta name="description" content="@yield('meta_description', 'Merchant Management Dashboard')">
     <meta name="author" content="Your Company Name">
     <!-- Global Styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/base.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/sidebar.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/header.css') }}">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
 
     <!-- Page Specific Styles -->
     @stack('page-specific-styles')

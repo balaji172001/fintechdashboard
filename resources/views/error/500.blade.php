@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>500 Forbidden | Merchant Panel</title>
-    <link rel="icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/svg+xml">
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.svg') }}" type="image/svg+xml">
+    <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/svg+xml">
     <meta name="robots" content="noindex, nofollow">
     <meta name="description" content="500 Forbidden - You do not have permission to access this page.">
-    <link rel="stylesheet" href="{{ asset('assets/css/pagenotfound.css') }}">
+        <link rel="stylesheet" href="/assets/css/pagenotfound.css">
 </head>
 <body>
     <section class="err_500">
