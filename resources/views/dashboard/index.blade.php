@@ -356,7 +356,7 @@
                    pointStyle: 'circle',
                    boxWidth: 8,
                    padding: 10,
-                   color: '#374151'
+                   color: '#374151' 
                }
            }
        },
