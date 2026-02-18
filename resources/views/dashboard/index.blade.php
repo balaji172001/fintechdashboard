@@ -323,8 +323,8 @@
                        data: amountData,
                        borderColor: '#1F7A5C',
                        backgroundColor: 'rgba(31,122,92,0.08)',
-                       tension: 0.4,
-                       borderWidth: 2,
+                       tension: 0.2,
+                       borderWidth: 1,
                        fill: true,
                        yAxisID: 'y'
                    },
@@ -333,8 +333,8 @@
                        data: countData,
                        borderColor: '#2563EB',
                        backgroundColor: 'rgba(37,99,235,0.08)',
-                       tension: 0.4,
-                       borderWidth: 2,
+                       tension: 0.1 ,
+                       borderWidth: 1,
                        fill: true,
                        yAxisID: 'y1'
                    }
@@ -350,11 +350,12 @@
        plugins: {
            legend: {
                position: 'top',
-               align: 'start',
+               align: 'center',
                labels: {
                    usePointStyle: true,
                    pointStyle: 'circle',
                    boxWidth: 8,
+                   padding: 10,
                    color: '#374151'
                }
            }

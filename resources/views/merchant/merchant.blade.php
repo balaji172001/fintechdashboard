@@ -100,10 +100,10 @@ ADD NEW MERCHANT
 
                         </span>
                         <div class="dropdown-menu">
-                            <a href="#">View Details</a>
-                            <a href="#">View Wallet History</a>
-                            <a href="#">Edit</a>
-                            <a href="#" class="danger">Deactivate Merchant</a>
+                            <a href="javascript:void(0)">View Details</a>
+                            <a href="javascript:void(0)">View Wallet History</a>
+                            <a href="javascript:void(0)">Edit</a>
+                            <a href="javascript:void(0)" class="danger">Deactivate Merchant</a>
                         </div>
                     </div>
                 </td>
@@ -126,14 +126,24 @@ ADD NEW MERCHANT
                         <span class="dot"></span> Active
                     </span>
                 </td>
-                <td><span  class="dropdown-toggle">
-                    <svg width="3" height="15" viewBox="0 0 3 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.45846 8.7526C2.26387 8.7526 2.91679 8.09969 2.91679 7.29427C2.91679 6.48886 2.26387 5.83594 1.45846 5.83594C0.65304 5.83594 0.00012207 6.48886 0.00012207 7.29427C0.00012207 8.09969 0.65304 8.7526 1.45846 8.7526Z" fill="#1F0405"/>
-<path d="M1.45846 14.5807C2.26387 14.5807 2.91679 13.9278 2.91679 13.1224C2.91679 12.317 2.26387 11.6641 1.45846 11.6641C0.65304 11.6641 0.00012207 12.317 0.00012207 13.1224C0.00012207 13.9278 0.65304 14.5807 1.45846 14.5807Z" fill="#1F0405"/>
-<path d="M1.45833 2.91667C2.26375 2.91667 2.91667 2.26375 2.91667 1.45833C2.91667 0.652918 2.26375 0 1.45833 0C0.652918 0 0 0.652918 0 1.45833C0 2.26375 0.652918 2.91667 1.45833 2.91667Z" fill="#1F0405"/>
-</svg>
+                <td class="action-cell">
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">
+                            <svg width="3" height="15" viewBox="0 0 3 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.45846 8.7526C2.26387 8.7526 2.91679 8.09969 2.91679 7.29427C2.91679 6.48886 2.26387 5.83594 1.45846 5.83594C0.65304 5.83594 0.00012207 6.48886 0.00012207 7.29427C0.00012207 8.09969 0.65304 8.7526 1.45846 8.7526Z" fill="#1F0405"/>
+                        <path d="M1.45846 14.5807C2.26387 14.5807 2.91679 13.9278 2.91679 13.1224C2.91679 12.317 2.26387 11.6641 1.45846 11.6641C0.65304 11.6641 0.00012207 12.317 0.00012207 13.1224C0.00012207 13.9278 0.65304 14.5807 1.45846 14.5807Z" fill="#1F0405"/>
+                        <path d="M1.45833 2.91667C2.26375 2.91667 2.91667 2.26375 2.91667 1.45833C2.91667 0.652918 2.26375 0 1.45833 0C0.652918 0 0 0.652918 0 1.45833C0 2.26375 0.652918 2.91667 1.45833 2.91667Z" fill="#1F0405"/>
+                        </svg>
 
-                </span></td>
+                        </span>
+                        <div class="dropdown-menu">
+                            <a href="javascript:void(0)">View Details</a>
+                            <a href="javascript:void(0)">View Wallet History</a>
+                            <a href="javascript:void(0)">Edit</a>
+                            <a href="javascript:void(0)" class="danger">Deactivate Merchant</a>
+                        </div>
+                    </div>
+                </td>
             </tr>
 
 
@@ -153,14 +163,24 @@ ADD NEW MERCHANT
                         <span class="dot"></span> Active
                     </span>
                 </td>
-                <td><span  class="dropdown-toggle">
-                    <svg width="3" height="15" viewBox="0 0 3 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.45846 8.7526C2.26387 8.7526 2.91679 8.09969 2.91679 7.29427C2.91679 6.48886 2.26387 5.83594 1.45846 5.83594C0.65304 5.83594 0.00012207 6.48886 0.00012207 7.29427C0.00012207 8.09969 0.65304 8.7526 1.45846 8.7526Z" fill="#1F0405"/>
-<path d="M1.45846 14.5807C2.26387 14.5807 2.91679 13.9278 2.91679 13.1224C2.91679 12.317 2.26387 11.6641 1.45846 11.6641C0.65304 11.6641 0.00012207 12.317 0.00012207 13.1224C0.00012207 13.9278 0.65304 14.5807 1.45846 14.5807Z" fill="#1F0405"/>
-<path d="M1.45833 2.91667C2.26375 2.91667 2.91667 2.26375 2.91667 1.45833C2.91667 0.652918 2.26375 0 1.45833 0C0.652918 0 0 0.652918 0 1.45833C0 2.26375 0.652918 2.91667 1.45833 2.91667Z" fill="#1F0405"/>
-</svg>
+                <td class="action-cell">
+                    <div class="dropdown">
+                        <span class="dropdown-toggle">
+                            <svg width="3" height="15" viewBox="0 0 3 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.45846 8.7526C2.26387 8.7526 2.91679 8.09969 2.91679 7.29427C2.91679 6.48886 2.26387 5.83594 1.45846 5.83594C0.65304 5.83594 0.00012207 6.48886 0.00012207 7.29427C0.00012207 8.09969 0.65304 8.7526 1.45846 8.7526Z" fill="#1F0405"/>
+                        <path d="M1.45846 14.5807C2.26387 14.5807 2.91679 13.9278 2.91679 13.1224C2.91679 12.317 2.26387 11.6641 1.45846 11.6641C0.65304 11.6641 0.00012207 12.317 0.00012207 13.1224C0.00012207 13.9278 0.65304 14.5807 1.45846 14.5807Z" fill="#1F0405"/>
+                        <path d="M1.45833 2.91667C2.26375 2.91667 2.91667 2.26375 2.91667 1.45833C2.91667 0.652918 2.26375 0 1.45833 0C0.652918 0 0 0.652918 0 1.45833C0 2.26375 0.652918 2.91667 1.45833 2.91667Z" fill="#1F0405"/>
+                        </svg>
 
-                </span></td>
+                        </span>
+                        <div class="dropdown-menu">
+                            <a href="javascript:void(0)">View Details</a>
+                            <a href="javascript:void(0)">View Wallet History</a>
+                            <a href="javascript:void(0)">Edit</a>
+                            <a href="javascript:void(0)" class="danger">Deactivate Merchant</a>
+                        </div>
+                    </div>
+                </td>
             </tr>
 
         </tbody>
@@ -199,22 +219,21 @@ ADD NEW MERCHANT
 @push('scripts')
 <script>
 document.addEventListener("click", function (e) {
+  // Close all dropdowns
+  document.querySelectorAll(".dropdown-menu").forEach(menu => {
+    menu.style.display = "none";
+  });
 
-    // Close all menus first
-    document.querySelectorAll(".dropdown-menu").forEach(menu => {
-        menu.style.display = "none";
-    });
+  const toggle = e.target.closest(".dropdown-toggle");
 
-    // Check if clicked inside toggle
-    let toggle = e.target.closest(".dropdown-toggle");
-
-    if (toggle) {
-        e.stopPropagation();
-        let menu = toggle.nextElementSibling;
-        menu.style.display = "flex";
-    }
-
+  if (toggle) {
+    e.stopPropagation();
+    const menu = toggle.parentElement.querySelector(".dropdown-menu");
+    menu.style.display = "flex";
+  }
 });
+
+
 </script>
 
 

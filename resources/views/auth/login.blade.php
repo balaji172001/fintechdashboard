@@ -51,6 +51,12 @@
             </div>
         </div>
     </div>
+<!-- Snackbar -->
+<div id="snackbar"></div>
+
+<!-- Loader -->
+<div id="loader" class="loader hidden"></div>
+
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -102,11 +108,16 @@ $(document).ready(function() {
             $(".password_input").addClass("input-error");
             isValid = false;
         }
-
         if (isValid) {
-            alert("Form Submitted Successfully!");
-            // this.submit(); // enable when backend ready
+            showSnackbar('Login successful', 'success');
+            redirectWithTransition();
+            localStorage.setItem('isLoggedIn', 'true');
+        } else {
+            showSnackbar('Invalid username or password', 'error');
         }
+
+
+
 
     });
 
@@ -120,6 +131,33 @@ $(document).ready(function() {
         let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
     }
+
+   function showSnackbar(message, type = 'success') {
+    const sb = document.getElementById('snackbar');
+    sb.textContent = message;
+    sb.className = `show ${type}`;
+
+    setTimeout(() => {
+        sb.className = '';
+    }, 3000);
+}
+
+function showLoader(show = true) {
+    document.getElementById('loader')
+        .classList.toggle('hidden', !show);
+}
+
+function redirectWithTransition() {
+    showLoader(true);
+
+    setTimeout(() => {
+        document.body.classList.add('fade-out');
+
+        setTimeout(() => {
+            window.location.href = '/dashboard';
+        }, 400);
+    }, 3000);
+}
 
 });
 

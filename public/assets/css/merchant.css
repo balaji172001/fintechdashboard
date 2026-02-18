@@ -120,6 +120,7 @@ padding: 12px 20px;    font-size: 13px;
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
+    overflow: visible;
 }
 
 .merchant-table thead {
@@ -197,7 +198,7 @@ padding: 12px 20px;    font-size: 13px;
 
 /* Make last column sticky */
 .merchant-table th:last-child{
-     background: #ffffff;
+     background: #F4F4F4 !important;
 }
 .merchant-table th:last-child,
 .merchant-table td:last-child {
@@ -213,6 +214,10 @@ padding: 12px 20px;    font-size: 13px;
     box-shadow: -2px 0 5px rgba(0,0,0,0.04);
 }
 
+.merchant-table td,
+.merchant-table th {
+  overflow: visible;
+}
 .table-card {
     overflow-x: auto;
     overflow-y: visible; /* important */
@@ -241,6 +246,12 @@ padding: 12px 20px;    font-size: 13px;
     flex-direction: column;
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     z-index: 9999;
+}
+.action-cell {
+  position: sticky;
+  right: 0;
+  background: #fff;
+  z-index: 10;
 }
 
 .dropdown-menu a {

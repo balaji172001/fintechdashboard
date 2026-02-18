@@ -17,7 +17,7 @@ Route::get('/merchant-accounts', function () {
     ]);
 })->name('merchant.merchant');
 
-Route::get('/login', function () {
+Route::get('/', function () {
     return view('auth.login');
 })->name('login');
 
