@@ -90,7 +90,6 @@ ADD NEW MERCHANT
                     </span>
                 </td>
                 <td class="action-cell">
-                    <div class="dropdown">
                         <span class="dropdown-toggle">
                             <svg width="3" height="15" viewBox="0 0 3 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.45846 8.7526C2.26387 8.7526 2.91679 8.09969 2.91679 7.29427C2.91679 6.48886 2.26387 5.83594 1.45846 5.83594C0.65304 5.83594 0.00012207 6.48886 0.00012207 7.29427C0.00012207 8.09969 0.65304 8.7526 1.45846 8.7526Z" fill="#1F0405"/>
@@ -99,13 +98,6 @@ ADD NEW MERCHANT
                         </svg>
 
                         </span>
-                        <div class="dropdown-menu">
-                            <a href="javascript:void(0)">View Details</a>
-                            <a href="javascript:void(0)">View Wallet History</a>
-                            <a href="javascript:void(0)">Edit</a>
-                            <a href="javascript:void(0)" class="danger">Deactivate Merchant</a>
-                        </div>
-                    </div>
                 </td>
             </tr>
 
@@ -127,7 +119,6 @@ ADD NEW MERCHANT
                     </span>
                 </td>
                 <td class="action-cell">
-                    <div class="dropdown">
                         <span class="dropdown-toggle">
                             <svg width="3" height="15" viewBox="0 0 3 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.45846 8.7526C2.26387 8.7526 2.91679 8.09969 2.91679 7.29427C2.91679 6.48886 2.26387 5.83594 1.45846 5.83594C0.65304 5.83594 0.00012207 6.48886 0.00012207 7.29427C0.00012207 8.09969 0.65304 8.7526 1.45846 8.7526Z" fill="#1F0405"/>
@@ -136,13 +127,7 @@ ADD NEW MERCHANT
                         </svg>
 
                         </span>
-                        <div class="dropdown-menu">
-                            <a href="javascript:void(0)">View Details</a>
-                            <a href="javascript:void(0)">View Wallet History</a>
-                            <a href="javascript:void(0)">Edit</a>
-                            <a href="javascript:void(0)" class="danger">Deactivate Merchant</a>
-                        </div>
-                    </div>
+
                 </td>
             </tr>
 
@@ -164,7 +149,6 @@ ADD NEW MERCHANT
                     </span>
                 </td>
                 <td class="action-cell">
-                    <div class="dropdown">
                         <span class="dropdown-toggle">
                             <svg width="3" height="15" viewBox="0 0 3 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.45846 8.7526C2.26387 8.7526 2.91679 8.09969 2.91679 7.29427C2.91679 6.48886 2.26387 5.83594 1.45846 5.83594C0.65304 5.83594 0.00012207 6.48886 0.00012207 7.29427C0.00012207 8.09969 0.65304 8.7526 1.45846 8.7526Z" fill="#1F0405"/>
@@ -173,13 +157,7 @@ ADD NEW MERCHANT
                         </svg>
 
                         </span>
-                        <div class="dropdown-menu">
-                            <a href="javascript:void(0)">View Details</a>
-                            <a href="javascript:void(0)">View Wallet History</a>
-                            <a href="javascript:void(0)">Edit</a>
-                            <a href="javascript:void(0)" class="danger">Deactivate Merchant</a>
-                        </div>
-                    </div>
+
                 </td>
             </tr>
 
@@ -217,24 +195,50 @@ ADD NEW MERCHANT
 @endsection
 
 @push('scripts')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-document.addEventListener("click", function (e) {
-  // Close all dropdowns
-  document.querySelectorAll(".dropdown-menu").forEach(menu => {
-    menu.style.display = "none";
-  });
+$(document).ready(function() {
+    const menuHTML = `
+        <div class="floating-action-menu">
+            <a href="javascript:void(0)">View Details</a>
+            <a href="javascript:void(0)">View Wallet History</a>
+            <a href="javascript:void(0)">Edit</a>
+            <a href="javascript:void(0)">Deactivate Merchant</a>
+        </div>
+    `;
 
-  const toggle = e.target.closest(".dropdown-toggle");
+    $('.merchant-table').on('click', '.dropdown-toggle', function(e) {
+        e.stopPropagation();
 
-  if (toggle) {
-    e.stopPropagation();
-    const menu = toggle.parentElement.querySelector(".dropdown-menu");
-    menu.style.display = "flex";
-  }
+        // Remove existing menu if any
+        $('.floating-action-menu').remove();
+
+        // Append menu to body
+        $('body').append(menuHTML);
+
+        // Position menu below the toggle, aligned right
+        let offset = $(this).offset();
+        let width = $(this).outerWidth();
+
+        $('.floating-action-menu').css({
+            top: offset.top + $(this).outerHeight() + 5 + 'px', // 5px below toggle
+            right: offset.left + $(this).outerWidth() - $('.floating-action-menu').outerWidth()+ 80 + 'px',
+            position: 'absolute'
+        });
+    });
+
+    // Optional: click anywhere else closes the menu
+    $(document).click(function() {
+        $('.floating-action-menu').remove();
+    });
+
+    // Prevent menu click from closing
+    $(document).on('click', '.floating-action-menu', function(e) {
+        e.stopPropagation();
+    });
 });
-
-
 </script>
+
 
 
 @endpush

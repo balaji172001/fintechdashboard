@@ -24,22 +24,7 @@
 }
 
 .icon-circle {
-    width: 34px;
-    height: 34px;
-    background: #F3F4F6;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 14px;
     cursor: pointer;
-    transition: 0.2s ease;
-}
-
-.icon-circle:hover {
-    background: #E5E7EB;
 }
 
 .profile-img {
